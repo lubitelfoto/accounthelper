@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Помощник бухгалтера</string>
+    <string name="btn_plan_classic">Показать план счетов</string>
+    <string name="btn_situation_search">Поиск по ситуации</string>
+    <string name="str_some">Какой-то текст для пробы</string>
+    <string name="logo_transition">logo_transition</string>
+    <string name="btn_calculators">Калькуляторы</string>
+    <string name="btn_calendar">Календарь</string>
+    <string name="NDS_calc_text">Рассчет НДС</string>
+    <string name="NDS_calc_hint_no_NDS">Сумма без НДС</string>
+    <string name="NDS_calc_hint_NDS">Ставка НДС</string>
+    <string name="NDS_calc_hint_sum">Сумма с НДС</string>
+    <string name="NDS">18</string>
+    <string name="NDS_calc_hint_tax_value">В том числе НДС</string>
+</resources>
