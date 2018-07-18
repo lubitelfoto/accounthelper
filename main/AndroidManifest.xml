@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlanClassicActivity" />
-        <activity android:name=".CalculatorsActivity"></activity>
+        <activity android:name=".CalculatorsActivity" />
+        <activity android:name=".NDSCalcActivity"></activity>
     </application>
 
 </manifest>

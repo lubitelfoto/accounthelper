@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ExpandableListView;
 import android.widget.SimpleCursorTreeAdapter;
-
+import android.widget.TextView;
 import java.io.IOException;
 
 
@@ -18,12 +18,16 @@ public class PlanClassicActivity extends AppCompatActivity {
     private SQLiteDatabase mDB;
     BuhCursorAdapter mBuhCurAdapter;
     ExpandableListView mExpListView;
+    TextView textPlanHead;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plan_classic);
+
+        textPlanHead = (TextView) findViewById(R.id.btn_plan_classic);
+
         mWorkWDB = new WorkWithDB(this);
 
         try {

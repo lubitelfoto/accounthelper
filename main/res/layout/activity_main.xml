@@ -6,26 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_plan_classic"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="parent"
-        android:text="@string/btn_plan_classic"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_calculators"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btn_plan_classic"
-        android:text="@string/btn_calculators"/>
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_plan_classic"
+            style="@style/MaterialCard">
 
-    <Button
-        android:id="@+id/btn_calendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btn_calculators"
-        android:text="@string/btn_calendar"/>
 
+            <TextView
+                android:id="@+id/plan_head"
+                style="@style/MaterialCartText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_plan_classic"
+                android:transitionName="activity_transition"
+                />
+
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_calculators"
+            style="@style/MaterialCard">
+
+        <TextView
+            android:id="@+id/calc_head"
+            style="@style/MaterialCartText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_calculators"
+            android:transitionName="activity_transition"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_calendar"
+            style="@style/MaterialCard">
+
+
+            <TextView
+                style="@style/MaterialCartText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_calendar" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

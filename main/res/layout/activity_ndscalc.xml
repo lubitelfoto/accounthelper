@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorsActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/calc_head"
+                style="@style/MaterialCartText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_calculators"
+                android:transitionName="activity_transition"/>
+
+            <TextView
+                style="@style/CalcStyle"
+                android:id="@+id/NDS_calc_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/NDS_calc_text"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/CalcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/NDS_calc_sum_no_tax"
+                    style="@style/CalcStyle"
+                    android:hint="@string/NDS_calc_hint_no_NDS"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/CalcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/NDS_calc_tax"
+                    style="@style/CalcStyle"
+                    android:hint="@string/NDS_calc_hint_NDS"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/CalcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    style="@style/CalcStyle"
+                    android:id="@+id/NDS_calc_sum"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/NDS_calc_hint_sum"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/CalcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/CalcStyle"
+                    android:id="@+id/NDS_calc_tax_value"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/NDS_calc_hint_tax_value"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
