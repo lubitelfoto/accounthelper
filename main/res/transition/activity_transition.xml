@@ -4,4 +4,8 @@
         android:fromScene="@layout/activity_main"
         android:toScene="@layout/activity_calculators"
         android:transition="@transition/activity_transition" />
+    <transition
+        android:fromScene="@layout/activity_main"
+        android:toScene="@layout/activity_scheme"
+        android:transition="@transition/activity_transition" />
 </transitionManager>

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.btn_plan_classic:
-                Intent planIntent = new Intent(this, PlanClassicActivity.class);
+                Intent planIntent = new Intent(this, SchemeActivity.class);
                 ActivityOptionsCompat optionsPlan = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, textPlanHead, ViewCompat.getTransitionName(textPlanHead));
                 startActivity(planIntent, optionsPlan.toBundle());
                 break;

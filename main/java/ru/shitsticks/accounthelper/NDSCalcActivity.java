@@ -19,7 +19,7 @@ public class NDSCalcActivity extends AppCompatActivity {
     EditText etxTaxNDS;
     EditText etxValueNDS;
     EditText etxSumNDS;
-    TextView textCalcHead;
+    TextView textNDSCalcHead;
     static int moneyRound = BigDecimal.ROUND_UP;
     int sourceNDS; //ресурс заполненный пользователем, что б понять какое значение вычислять при изменении ндс
     int mOnFocusNDS; //проверка фокуса на едиттекст, иначе срабатыевает onchangelistener
@@ -33,7 +33,7 @@ public class NDSCalcActivity extends AppCompatActivity {
         etxTaxNDS = (EditText) findViewById(R.id.NDS_calc_tax);
         etxValueNDS = (EditText) findViewById(R.id.NDS_calc_tax_value);
         etxSumNDS = (EditText) findViewById(R.id.NDS_calc_sum);
-        textCalcHead = (TextView) findViewById(R.id.calc_head);
+        textNDSCalcHead = (TextView) findViewById(R.id.nds_calc_head);
 
         etxTaxNDS.setText(R.string.NDS);
 

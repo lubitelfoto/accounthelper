@@ -14,19 +14,12 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/calc_head"
-                style="@style/MaterialCartText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/btn_calculators"
-                android:transitionName="activity_transition"/>
-
-            <TextView
                 style="@style/CalcStyle"
-                android:id="@+id/NDS_calc_text"
+                android:id="@+id/nds_calc_head"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/NDS_calc_text"
+                android:transitionName="calc_to_nds_transition"
                 />
         </LinearLayout>
         <LinearLayout

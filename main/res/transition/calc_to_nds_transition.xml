@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition
+        android:fromScene="@layout/activity_calculators"
+        android:toScene="@layout/activity_ndscalc"
+        android:transition="@transition/calc_to_nds_transition"
+        />
+</transitionManager>

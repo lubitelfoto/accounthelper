@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlanClassicActivity">
+    tools:context=".SchemeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,17 +12,19 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/SchemeStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_plan_classic"/>
+            android:text="@string/btn_plan_classic"
+            android:transitionName="activity_transition"/>
 
-    <ExpandableListView
-        android:id="@+id/exp_list_plan_classic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:choiceMode="singleChoice"
-        android:dividerHeight="1dp">
-    </ExpandableListView>
+        <ExpandableListView
+            android:id="@+id/exp_list_plan_classic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp">
+        </ExpandableListView>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

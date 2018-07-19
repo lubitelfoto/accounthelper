@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PlanClassicActivity" />
         <activity android:name=".CalculatorsActivity" />
-        <activity android:name=".NDSCalcActivity"></activity>
+        <activity android:name=".NDSCalcActivity" />
+        <activity android:name=".SchemeActivity"></activity>
     </application>
 
 </manifest>

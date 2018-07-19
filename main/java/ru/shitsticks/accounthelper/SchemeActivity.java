@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.io.IOException;
 
 
-public class PlanClassicActivity extends AppCompatActivity {
+public class SchemeActivity extends AppCompatActivity {
 
     private WorkWithDB mWorkWDB;
     private SQLiteDatabase mDB;
@@ -24,7 +24,7 @@ public class PlanClassicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plan_classic);
+        setContentView(R.layout.activity_scheme);
 
         textPlanHead = (TextView) findViewById(R.id.btn_plan_classic);
 
@@ -56,7 +56,7 @@ public class PlanClassicActivity extends AppCompatActivity {
         mDB.close();
     }
 
-        /* значение полей
+/* значение полей
 Context context - конткст (this)
 Cursor cursor - курсор с данными по группам, название
 int groupLayout - лэйаут для отображения группы
